@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="3dp"
+
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="@drawable/massegebg"
+        android:backgroundTint="#F6FBF6"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="190dp"
+            android:layout_height="124dp"
+            android:layout_margin="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profileuser"
+
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/recmsg"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:paddingStart="10sp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_12sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:text="kalkgfgnjh    jhkk  jehfhwikwk iefhkw jksahdasa  liidohwkwjwj  ughkkubhjjjiufvkkf kihyfnmhgjkv"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/rectime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingBottom="5dp"
+            android:text="kal" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/feeling"
+        android:layout_width="19dp"
+        android:layout_height="19dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-8dp"
+        android:layout_marginTop="17dp"
+        android:src="@drawable/profileuser"
+
+        android:layout_toEndOf="@+id/linearLayout2"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout2"/>
+
+</RelativeLayout>
